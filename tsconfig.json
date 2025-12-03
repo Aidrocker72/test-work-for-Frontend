@@ -9,17 +9,15 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["node"],
-    "ignoreDeprecations": "6.0"
+    "types": ["node"]
   },
   "include": ["src/**/*", "src/types/**/*"],
   "exclude": ["node_modules"]

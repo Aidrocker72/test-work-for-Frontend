@@ -1,0 +1,27 @@
+@use '@/styles/variables.scss' as *;
+
+.task-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+  &__button {
+    &--active {
+      background-color: $primary-color !important;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .task-filters {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__button {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+}

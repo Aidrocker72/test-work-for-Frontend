@@ -1,0 +1,21 @@
+export const formatDate = (date: Date | null) => {
+  if (!date) return '—'
+  return new Intl.DateTimeFormat('ru-RU', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  }).format(new Date(date))
+}
+
+export const formatTaskDate = (date: Date | null) => {
+  if (!date) return '—'
+  return new Intl.DateTimeFormat('ru-RU', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+ }).format(new Date(date))
+}

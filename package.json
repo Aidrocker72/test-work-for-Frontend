@@ -2,13 +2,14 @@
   "name": "test-work-for-frontend",
   "private": true,
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build --force"
+    "type-check": "vue-tsc --build --force",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/roboto": "5.2.7",
@@ -19,8 +20,10 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.9.0",
+    "@types/web-app-manifest": "^1.0.7",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
+    "gh-pages": "^6.0.0",
     "npm-run-all2": "^8.0.4",
     "sass-embedded": "^1.92.1",
     "typescript": "~5.9.2",

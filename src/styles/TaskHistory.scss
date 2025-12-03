@@ -1,0 +1,7 @@
+@use '@/styles/variables.scss' as *;
+
+.task-history {
+  &__toolbar {
+    background-color: grey-lighten-3;
+  }
+}

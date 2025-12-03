@@ -1,0 +1,13 @@
+@use '@/styles/variables.scss' as *;
+
+.task-item {
+  &__deletion-pending {
+    display: flex;
+    align-items: center;
+  }
+
+  &__completed {
+    text-decoration: line-through;
+    color: #757575;
+  }
+}
